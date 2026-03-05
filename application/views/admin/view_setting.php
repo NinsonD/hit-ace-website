@@ -321,8 +321,6 @@ if(!$this->session->userdata('id')) {
 											<input type="text" class="form-control" name="smtp_password" value="<?php echo $setting['smtp_password']; ?>">
 										</div>
 									</div>
-									
-
 									<div class="form-group">
 										<label for="" class="col-sm-4 control-label"></label>
 										<div class="col-sm-6">
@@ -620,7 +618,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 
 
-							<h3 class="seo-info">Partner</h3>
+							<h3 class="seo-info">Clients</h3>
           					<?php echo form_open(base_url().'admin/setting/update',array('class' => 'form-horizontal')); ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Title </label>
@@ -935,13 +933,13 @@ if(!$this->session->userdata('id')) {
                                 <tr>
                                     <?php echo form_open_multipart(base_url().'admin/setting/update',array('class' => 'form-horizontal')); ?>
                                         <td style="width:50%">
-                                            <h4>Existing Portfolio Page Banner</h4>
+                                            <h4>Existing Projects Page Banner</h4>
                                             <p>
                                                 <img src="<?php echo base_url().'public/uploads/'.$setting['banner_portfolio']; ?>" alt="" style="width: 100%;height:auto;">  
                                             </p>                                        
                                         </td>
                                         <td style="width:50%">
-                                            <h4>Change Portfolio Page Banner</h4>
+                                            <h4>Change Projects Page Banner</h4>
                                             Select Photo<input type="file" name="photo">
                                             <input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_portfolio">
                                         </td>

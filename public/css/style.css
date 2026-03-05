@@ -702,7 +702,7 @@ Slider
 
 .slider-item {
 	position: relative;
-	height: 630px;
+	height: 100vh;
 	transition: all 0.5s;
 	background-repeat: no-repeat;
 	background-size: cover;

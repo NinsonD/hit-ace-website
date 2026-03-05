@@ -47,7 +47,7 @@ if(!$this->session->userdata('id')) {
       <div class="info-box">
         <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
         <div class="info-box-content">
-          <span class="info-box-text">Total Portfolios</span>
+          <span class="info-box-text">Total Projects</span>
           <span class="info-box-number"><?php echo $total_portfolio; ?></span>
         </div>
       </div>

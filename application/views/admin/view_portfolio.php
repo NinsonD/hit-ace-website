@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Portfolio</h1>
+		<h1>View Projects</h1>
 	</div>
 	<div class="content-header-right">
 		<a href="<?php echo base_url(); ?>admin/portfolio/add" class="btn btn-primary btn-sm">Add New</a>

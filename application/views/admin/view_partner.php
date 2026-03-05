@@ -5,10 +5,10 @@ if(!$this->session->userdata('id')) {
 ?>
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Partners</h1>
+		<h1>View Clients</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="<?php echo base_url(); ?>admin/partner/add" class="btn btn-primary btn-sm">Add Partner</a>
+		<a href="<?php echo base_url(); ?>admin/partner/add" class="btn btn-primary btn-sm">Add Client</a>
 	</div>
 </section>
 

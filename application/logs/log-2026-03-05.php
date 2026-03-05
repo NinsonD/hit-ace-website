@@ -203,3 +203,16 @@ ERROR - 2026-03-05 11:51:08 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:51:09 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:51:10 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:51:11 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 16:56:48 --> Severity: Warning --> Undefined array key "smtp_crypto" C:\xampp\htdocs\hit-ace\application\views\admin\view_setting.php 328
+ERROR - 2026-03-05 16:56:48 --> Severity: Warning --> Undefined array key "smtp_crypto" C:\xampp\htdocs\hit-ace\application\views\admin\view_setting.php 329
+ERROR - 2026-03-05 16:56:48 --> Severity: Warning --> Undefined array key "smtp_crypto" C:\xampp\htdocs\hit-ace\application\views\admin\view_setting.php 330
+ERROR - 2026-03-05 17:01:35 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:38 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:38 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:39 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:53 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:55 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:01:56 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:03:08 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:03:15 --> Severity: 8192 --> setcookie(): Passing null to parameter #2 ($value) of type string is deprecated C:\xampp\htdocs\hit-ace\system\libraries\Session\Session_driver.php 142
+ERROR - 2026-03-05 17:05:25 --> 404 Page Not Found: Public/style.css

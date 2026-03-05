@@ -33,7 +33,8 @@
 		display: none;
 	}
 	.slider-item {
-		height: 500px;
+		height: 100vh;
+		min-height: 500px;
 	}
 	.slider-animated h2 {
 		font-size: 42px;
@@ -105,7 +106,8 @@
 		display: none;
 	}
 	.slider-item {
-		height: 380px;
+		height: 100vh;
+		min-height: 380px;
 	}
 	.slider-animated h2 {
 		font-size: 26px;
@@ -220,7 +222,8 @@
 		width: 50%;
 	}
 	.slider-item {
-		height: 420px;
+		height: 100vh;
+		min-height: 420px;
 	}
 	.slide-carousel.owl-carousel .owl-nav {
 		top: 80%;

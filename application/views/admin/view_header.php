@@ -209,14 +209,14 @@
 			        <li class="treeview <?php if( ($final_url_other == 'admin/portfolio/add')||($final_url_other == 'admin/portfolio')||($final_url_other == 'admin/portfolio/edit')||($final_url_other == 'admin/portfolio-category/add')||($final_url_other == 'admin/portfolio-category')||($final_url_other == 'admin/portfolio-category/edit') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-bars"></i>
-							<span>Portfolio</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/portfolio-category"><i class="fa fa-circle-o"></i> Portfolio Category</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Portfolio</a></li>
+						<span>Projects</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="<?php echo base_url(); ?>admin/portfolio-category"><i class="fa fa-circle-o"></i> Projects Category</a></li>
+						<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Projects</a></li>
 						</ul>
 					</li>
 
@@ -251,7 +251,7 @@
 
 			        <li class="treeview <?php if( ($final_url_other == 'admin/partner/add')||($final_url_other == 'admin/partner')||($final_url_other == 'admin/partner/edit') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/partner">
-			            <i class="fa fa-bookmark"></i> <span>Partner</span>
+			            <i class="fa fa-bookmark"></i> <span>Clients</span>
 			          </a>
 			        </li>
 		        <li class="treeview <?php if( ($final_url_other == 'admin/career/add')||($final_url_other == 'admin/career')||($final_url_other == 'admin/career/edit') ) {echo 'active';} ?>">

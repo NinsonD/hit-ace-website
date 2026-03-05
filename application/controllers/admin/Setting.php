@@ -548,7 +548,7 @@ class Setting extends CI_Controller
 				'counter3_text'  => $_POST['counter3_text'],
 				'counter3_value' => $_POST['counter3_value'],
 				'counter4_text'  => $_POST['counter4_text'],
-				'counter4_value' => $_POST['counter2_value'],
+				'counter4_value' => $_POST['counter4_value'],
 				'counter_status' => $_POST['counter_status']
             );
         	$this->Model_setting->update($form_data);   	

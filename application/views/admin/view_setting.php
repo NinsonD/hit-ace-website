@@ -428,7 +428,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 
 
-							<h3 class="seo-info">Portfolio</h3>
+							<h3 class="seo-info">Projects</h3>
           					<?php echo form_open(base_url().'admin/setting/update',array('class' => 'form-horizontal')); ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Title </label>
@@ -556,7 +556,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 
 
-							<h3 class="seo-info">Gallery</h3>
+							<h3 class="seo-info">Plant & Machinery</h3>
           					<?php echo form_open(base_url().'admin/setting/update',array('class' => 'form-horizontal')); ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Title </label>

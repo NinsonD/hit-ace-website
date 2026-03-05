@@ -58,7 +58,7 @@ if(!$this->session->userdata('id')) {
                         </div>
 
                         <div class="form-group">
-                            <label for="" class="col-sm-4 control-label">Gallery</label>
+                            <label for="" class="col-sm-4 control-label">Plant & Machinery</label>
                             <div class="col-sm-4">
                                 <select name="gallery_status" class="form-control">
                                     <option value="1" <?php if($menu['gallery_status'] == 1) {echo 'selected';} ?>>Show</option>
@@ -88,7 +88,7 @@ if(!$this->session->userdata('id')) {
                         </div>
 
                         <div class="form-group">
-                            <label for="" class="col-sm-4 control-label">Portfolio</label>
+                            <label for="" class="col-sm-4 control-label">Projects</label>
                             <div class="col-sm-4">
                                 <select name="portfolio_status" class="form-control">
                                     <option value="1" <?php if($menu['portfolio_status'] == 1) {echo 'selected';} ?>>Show</option>

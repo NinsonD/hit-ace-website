@@ -345,25 +345,25 @@ foreach ($testimonial_photo as $row) {
 		<div class="row">			
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
+					<h2><span class="counter"><?php echo preg_replace('/\D/', '', $setting['counter1_value']); ?></span><?php echo preg_replace('/\d/', '', $setting['counter1_value']); ?></h2>
 					<h4><?php echo $setting['counter1_text']; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
+					<h2><span class="counter"><?php echo preg_replace('/\D/', '', $setting['counter2_value']); ?></span><?php echo preg_replace('/\d/', '', $setting['counter2_value']); ?></h2>
 					<h4><?php echo $setting['counter2_text']; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
+					<h2><span class="counter"><?php echo preg_replace('/\D/', '', $setting['counter3_value']); ?></span><?php echo preg_replace('/\d/', '', $setting['counter3_value']); ?></h2>
 					<h4><?php echo $setting['counter3_text']; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
+					<h2><span class="counter"><?php echo preg_replace('/\D/', '', $setting['counter4_value']); ?></span><?php echo preg_replace('/\d/', '', $setting['counter4_value']); ?></h2>
 					<h4><?php echo $setting['counter4_text']; ?></h4>
 				</div>
 			</div>

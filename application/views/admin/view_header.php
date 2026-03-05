@@ -254,7 +254,11 @@
 			            <i class="fa fa-bookmark"></i> <span>Partner</span>
 			          </a>
 			        </li>
-
+		        <li class="treeview <?php if( ($final_url_other == 'admin/career/add')||($final_url_other == 'admin/career')||($final_url_other == 'admin/career/edit') ) {echo 'active';} ?>">
+		          <a href="<?php echo base_url(); ?>admin/career">
+		            <i class="fa fa-briefcase"></i> <span>Career</span>
+		          </a>
+		        </li>
 			        <li class="treeview <?php if( ($final_url_other == 'admin/why-choose/add')||($final_url_other == 'admin/why-choose')||($final_url_other == 'admin/why-choose/edit')||($final_url_other == 'admin/why-choose/main-photo')||($final_url_other == 'admin/why-choose/item-bg') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-bolt"></i>

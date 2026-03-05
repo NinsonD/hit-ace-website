@@ -8,6 +8,8 @@ class Contact extends CI_Controller {
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('Model_contact');
+        $this->load->model('Model_career');
+        $this->load->library('upload');
     }
 
 	public function index()
@@ -25,6 +27,8 @@ class Contact extends CI_Controller {
 
 		$data['error'] = '';
 		$data['success'] = '';
+		$data['career'] = $this->Model_career->get_all_careers();
+		$data['search'] = '';
 
 		if(isset($_POST['form_contact'])) 
 		{
@@ -38,7 +42,26 @@ class Contact extends CI_Controller {
             if($this->form_validation->run() == FALSE) {
 				$valid = 0;
             	$data['error'] = validation_errors();
-            } 
+            }
+
+            // Handle file upload
+            $attachment_path = '';
+            if (!empty($_FILES['attachment']['name'])) {
+                $config['upload_path'] = './public/uploads/contact_attachments/';
+                $config['allowed_types'] = 'pdf|doc|docx|jpg|jpeg|png|txt';
+                $config['max_size'] = 5120; // 5MB
+                $config['file_name'] = 'contact_' . time() . '_' . $_FILES['attachment']['name'];
+                
+                $this->upload->initialize($config);
+                
+                if (!$this->upload->do_upload('attachment')) {
+                    $valid = 0;
+                    $data['error'] = $this->upload->display_errors();
+                } else {
+                    $upload_data = $this->upload->data();
+                    $attachment_path = $upload_data['full_path'];
+                }
+            }
 
 			if(PROJECT_MODE == 0) {
 				$valid = 0;
@@ -80,6 +103,11 @@ class Contact extends CI_Controller {
 
 				$this->email->subject($subject_text['value']);
 				$this->email->message($msg);
+
+				// Attach file if uploaded
+				if (!empty($attachment_path)) {
+					$this->email->attach($attachment_path);
+				}
 
 				$this->email->send();
 

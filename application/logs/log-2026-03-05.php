@@ -151,3 +151,55 @@ ERROR - 2026-03-05 11:16:02 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:16:03 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:16:03 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 11:16:07 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:00 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:00 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:01 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:03 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:05 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:06 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:07 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:07 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:08 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:21:09 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:23:32 --> Severity: Warning --> Undefined array key "HTTP_HOST" C:\xampp\htdocs\hit-ace\application\config\config.php 28
+ERROR - 2026-03-05 11:23:32 --> Severity: Warning --> Constant PROJECT_MODE already defined C:\xampp\htdocs\hit-ace\application\config\config.php 529
+ERROR - 2026-03-05 11:23:32 --> Severity: Warning --> Constant PROJECT_NOTIFICATION already defined C:\xampp\htdocs\hit-ace\application\config\config.php 530
+ERROR - 2026-03-05 11:23:32 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\hit-ace\application\config\config.php:28) C:\xampp\htdocs\hit-ace\system\helpers\url_helper.php 564
+ERROR - 2026-03-05 11:26:07 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:27:08 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:27:09 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:30:02 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:30:02 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:30:22 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:30:22 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:31:11 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:31:12 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:31:41 --> Severity: Warning --> Undefined variable $ai_id C:\xampp\htdocs\hit-ace\application\controllers\admin\Slider.php 65
+ERROR - 2026-03-05 11:32:03 --> Severity: Warning --> Undefined variable $ai_id C:\xampp\htdocs\hit-ace\application\controllers\admin\Slider.php 65
+ERROR - 2026-03-05 11:32:14 --> Severity: Warning --> Undefined variable $ai_id C:\xampp\htdocs\hit-ace\application\controllers\admin\Slider.php 65
+ERROR - 2026-03-05 11:35:40 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:36:31 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:37:52 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:37:54 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:37:55 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:37:56 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:37:56 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:38:00 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:38:24 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:38:35 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:39:43 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:39:45 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:39:48 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:43:09 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:43:10 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:43:12 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:43:40 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:44:32 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:45:21 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:46:27 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:07 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:08 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:08 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:09 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:10 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 11:51:11 --> 404 Page Not Found: Public/style.css

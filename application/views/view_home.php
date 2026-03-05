@@ -8,8 +8,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		foreach ($slider as $row) {
 			?>
 			<div class="slider-item" style="background-image:url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);">
+				<?php if(!empty($row['video'])): ?>
+				<video autoplay muted loop class="slider-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+					<source src="<?php echo base_url(); ?>public/uploads/<?php echo $row['video']; ?>" type="video/mp4">
+				</video>
+				<?php endif; ?>
 				<div class="bg"></div>
-				<div class="slider-table">
+				<div class="slider-table" style="position: relative; z-index: 10;">
 					<div class="slider-text">
 						<div class="slider-animated">
 							<h2><?php echo $row['heading']; ?></h2>

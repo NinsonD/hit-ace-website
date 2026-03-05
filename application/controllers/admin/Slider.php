@@ -48,6 +48,28 @@ class Slider extends CI_Controller
 		        $data['error'] = 'You must have to select a photo for featured photo<br>';
 		    }
 
+		    // Handle video upload (optional)
+		    $video_final_name = '';
+		    if(!empty($_FILES['video']['name'])) {
+		        $video_path = $_FILES['video']['name'];
+		        $video_path_tmp = $_FILES['video']['tmp_name'];
+		        $video_ext = pathinfo( $video_path, PATHINFO_EXTENSION );
+		        $allowed_video_ext = array('mp4','avi','mov','wmv','flv','mkv');
+		        
+		        if(in_array(strtolower($video_ext), $allowed_video_ext)) {
+		            // Check file size (max 50MB)
+		            if($_FILES['video']['size'] > 52428800) { // 50MB in bytes
+		                $valid = 0;
+		                $data['error'] = 'Video file size must be less than 50MB<br>';
+		            } else {
+		                $video_final_name = 'slider-video-'.$ai_id.'.'.$video_ext;
+		            }
+		        } else {
+		            $valid = 0;
+		            $data['error'] = 'You must have to upload mp4, avi, mov, wmv, flv or mkv file for video<br>';
+		        }
+		    }
+
 			if(PROJECT_MODE == 0) {
 				$valid = 0;
 				$data['error'] = PROJECT_NOTIFICATION;
@@ -63,8 +85,14 @@ class Slider extends CI_Controller
 		        $final_name = 'slider-'.$ai_id.'.'.$ext;
 		        move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
+		        // Move video file if uploaded
+		        if(!empty($video_final_name)) {
+		            move_uploaded_file( $video_path_tmp, './public/uploads/'.$video_final_name );
+		        }
+
 		        $form_data = array(
 					'photo'        => $final_name,
+					'video'        => $video_final_name,
 					'heading'      => $_POST['heading'],
 					'content'      => $_POST['content'],
 					'button1_text' => $_POST['button1_text'],
@@ -126,6 +154,28 @@ class Slider extends CI_Controller
 		        }
 		    }
 
+		    // Handle video upload (optional)
+		    $video_final_name = '';
+		    if(!empty($_FILES['video']['name'])) {
+		        $video_path = $_FILES['video']['name'];
+		        $video_path_tmp = $_FILES['video']['tmp_name'];
+		        $video_ext = pathinfo( $video_path, PATHINFO_EXTENSION );
+		        $allowed_video_ext = array('mp4','avi','mov','wmv','flv','mkv');
+		        
+		        if(in_array(strtolower($video_ext), $allowed_video_ext)) {
+		            // Check file size (max 50MB)
+		            if($_FILES['video']['size'] > 52428800) { // 50MB in bytes
+		                $valid = 0;
+		                $data['error'] = 'Video file size must be less than 50MB<br>';
+		            } else {
+		                $video_final_name = 'slider-video-'.$id.'.'.$video_ext;
+		            }
+		        } else {
+		            $valid = 0;
+		            $data['error'] = 'You must have to upload mp4, avi, mov, wmv, flv or mkv file for video<br>';
+		        }
+		    }
+
 			if(PROJECT_MODE == 0) {
 				$valid = 0;
 				$data['error'] = PROJECT_NOTIFICATION;
@@ -136,7 +186,13 @@ class Slider extends CI_Controller
 		    	$data['slider'] = $this->Model_slider->getData($id);
 
 		    	if($path == '') {
+		    		// Move video file if uploaded
+			        if(!empty($video_final_name)) {
+			            move_uploaded_file( $video_path_tmp, './public/uploads/'.$video_final_name );
+			        }
+		    		
 		    		$form_data = array(
+						'video'        => $video_final_name,
 						'heading'      => $_POST['heading'],
 						'content'      => $_POST['content'],
 						'button1_text' => $_POST['button1_text'],
@@ -152,8 +208,14 @@ class Slider extends CI_Controller
 					$final_name = 'slider-'.$id.'.'.$ext;
 		        	move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
+		        	// Move video file if uploaded
+			        if(!empty($video_final_name)) {
+			            move_uploaded_file( $video_path_tmp, './public/uploads/'.$video_final_name );
+			        }
+
 		        	$form_data = array(
 						'photo'        => $final_name,
+						'video'        => $video_final_name,
 						'heading'      => $_POST['heading'],
 						'content'      => $_POST['content'],
 						'button1_text' => $_POST['button1_text'],

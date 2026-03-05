@@ -455,9 +455,9 @@ $config['global_xss_filtering'] = FALSE;
 $config['csrf_protection'] = TRUE;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
-$config['csrf_expire'] = 7200;
-$config['csrf_regenerate'] = TRUE;
-$config['csrf_exclude_uris'] = array();
+$config['csrf_expire'] = 14400; // 4 hours instead of 2
+$config['csrf_regenerate'] = FALSE; // Don't regenerate on every submission for file uploads
+$config['csrf_exclude_uris'] = array('admin/slider/add', 'admin/slider/edit');
 
 /*
 |--------------------------------------------------------------------------

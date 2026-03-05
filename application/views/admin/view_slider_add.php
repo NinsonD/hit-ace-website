@@ -43,6 +43,12 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Video </label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="video">(Only mp4, avi, mov, wmv are allowed - Optional, Max 50MB)
+							</div>
+						</div>
+						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Heading </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php if(isset($_POST['heading'])){echo $_POST['heading'];} ?>">

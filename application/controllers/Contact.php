@@ -88,6 +88,7 @@ class Contact extends CI_Controller {
 					'smtp_port' => $header['setting']['smtp_port'],
 					'smtp_user' => $header['setting']['smtp_username'],
 					'smtp_pass' => $header['setting']['smtp_password'],
+					'smtp_crypto' => 'ssl',
 					'crlf' => "\r\n",
 					'newline' => "\r\n",
 					'mailtype'  => 'html',

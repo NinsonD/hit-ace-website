@@ -59,6 +59,7 @@ class Forget_password extends CI_Controller
 					'smtp_port' => $data['setting']['smtp_port'],
 					'smtp_user' => $data['setting']['smtp_username'],
 					'smtp_pass' => $data['setting']['smtp_password'],
+					'smtp_crypto' => 'ssl',
 					'crlf' => "\r\n",
 					'newline' => "\r\n",
 					'mailtype'  => 'html',

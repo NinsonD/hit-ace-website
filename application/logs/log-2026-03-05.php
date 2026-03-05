@@ -216,3 +216,16 @@ ERROR - 2026-03-05 17:01:56 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 17:03:08 --> 404 Page Not Found: Public/style.css
 ERROR - 2026-03-05 17:03:15 --> Severity: 8192 --> setcookie(): Passing null to parameter #2 ($value) of type string is deprecated C:\xampp\htdocs\hit-ace\system\libraries\Session\Session_driver.php 142
 ERROR - 2026-03-05 17:05:25 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:13:06 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:14:38 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:15:53 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:15:57 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:15:58 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:16:00 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:16:01 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:16:23 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:18:46 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:18:49 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:18:50 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:19:01 --> 404 Page Not Found: Public/style.css
+ERROR - 2026-03-05 17:19:01 --> 404 Page Not Found: Public/style.css

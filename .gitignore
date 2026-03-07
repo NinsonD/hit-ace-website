@@ -1,0 +1,12 @@
+# Log files
+/application/logs/*
+!.gitkeep
+*.log
+
+# Cache
+/application/cache/*
+!.gitkeep
+
+# Uploads (optional)
+/public/uploads/*
+!.gitkeep

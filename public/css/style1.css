@@ -1818,10 +1818,11 @@ span.page-numbers.current {
 /*Brand-Area*/
 
 .brand-item {
-	background-size: cover;
-	background-position: top center;
+	background-size: contain;
+	background-position: center;
 	background-repeat: no-repeat;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 	margin-top: 30px;
 }
 

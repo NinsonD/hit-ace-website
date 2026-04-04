@@ -129,9 +129,5 @@
 <script src='<?php echo base_url(); ?>public/js/jquery.counterup.min.js'></script>
 <script src='<?php echo base_url(); ?>public/js/custom.js'></script>
 
-
-<?php if($setting['tawk_live_chat_status'] == 'On'): ?>
-<?php echo $setting['tawk_live_chat_code']; ?>
-<?php endif; ?>
 </body>
 </html>

@@ -60,4 +60,16 @@ class Model_common extends CI_Model
         return $query->result_array();
     }
 
+    public function get_certificate_data()
+    {
+        $query = $this->db->query("SELECT * from tbl_certificate WHERE status=1 ORDER BY order_by ASC");
+        return $query->result_array();
+    }
+
+    public function get_branch_data()
+    {
+        $query = $this->db->query("SELECT * from tbl_branch WHERE status=1 ORDER BY order_by ASC");
+        return $query->result_array();
+    }
+
 }

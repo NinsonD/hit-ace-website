@@ -249,6 +249,18 @@
 						</ul>
 					</li>
 
+			        <li class="treeview <?php if( ($final_url_other == 'admin/certificate/add')||($final_url_other == 'admin/certificate')||($final_url_other == 'admin/certificate/edit') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/certificate">
+			            <i class="fa fa-certificate"></i> <span>Certificate</span>
+			          </a>
+			        </li>
+
+			        <li class="treeview <?php if( ($final_url_other == 'admin/branch/add')||($final_url_other == 'admin/branch')||($final_url_other == 'admin/branch/edit') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/branch">
+			            <i class="fa fa-map-marker"></i> <span>Branch</span>
+			          </a>
+			        </li>
+
 			        <li class="treeview <?php if( ($final_url_other == 'admin/partner/add')||($final_url_other == 'admin/partner')||($final_url_other == 'admin/partner/edit') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/partner">
 			            <i class="fa fa-bookmark"></i> <span>Clients</span>

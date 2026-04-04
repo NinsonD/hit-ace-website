@@ -61,3 +61,30 @@
 		</div>
 	</div>
 </div>
+
+<div class="certificate-area pt-60 pb-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<h2>Our Certificates</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<?php foreach($certificates as $certificate): ?>
+			<div class="col-md-4 col-sm-6">
+				<div class="certificate-item">
+					<div class="certificate-photo">
+						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $certificate['image']; ?>" alt="<?php echo $certificate['title']; ?>">
+					</div>
+					<div class="certificate-text">
+						<h4><?php echo $certificate['title']; ?></h4>
+						<p><?php echo $certificate['description']; ?></p>
+					</div>
+				</div>
+			</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+</div>

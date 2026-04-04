@@ -94,9 +94,48 @@
 			<div class="col-md-6">
 				<h4><?php echo FIND_US_ON_MAP; ?></h4>
 				<div class="map-area">
-					<?php echo $setting['contact_map_iframe']; ?>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.381185902399!2d55.96957487604924!3d25.392047977586074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5c770885add6f%3A0x6f590dfc93424acc!2sHIT%20ACE%20MULTI%20FAB%20INDUSTRIES!5e0!3m2!1sen!2sae!4v1775283062850!5m2!1sen!2sae" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Branches Section -->
+<div class="branches-area pt-60 pb-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<h2>Our Branches</h2>
+					<p>Find us at our convenient locations</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<?php foreach($branches as $branch): ?>
+			<div class="col-md-4 col-sm-6">
+				<div class="branch-item">
+					<div class="branch-info">
+						<h4><?php echo $branch['name']; ?></h4>
+						<div class="branch-details">
+							<p><i class="fa fa-map-marker"></i> <?php echo $branch['address']; ?></p>
+							<?php if(!empty($branch['phone'])): ?>
+							<p><i class="fa fa-phone"></i> <?php echo $branch['phone']; ?></p>
+							<?php endif; ?>
+							<?php if(!empty($branch['email'])): ?>
+							<p><i class="fa fa-envelope"></i> <?php echo $branch['email']; ?></p>
+							<?php endif; ?>
+						</div>
+					</div>
+					<?php if(!empty($branch['map_iframe'])): ?>
+					<div class="branch-map">
+						<?php echo $branch['map_iframe']; ?>
+					</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </div>

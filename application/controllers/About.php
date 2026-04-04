@@ -19,6 +19,7 @@ class About extends CI_Controller {
 		$header['language'] = $this->Model_common->get_language_data();
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
+		$header['certificates'] = $this->Model_common->get_certificate_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_about');

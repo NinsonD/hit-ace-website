@@ -21,6 +21,7 @@ class Contact extends CI_Controller {
 		$header['language'] = $this->Model_common->get_language_data();
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
+		$header['branches'] = $this->Model_common->get_branch_data();
 
 		$subject_text = $this->Model_contact->get_subject();
 		$success_text = $this->Model_contact->get_success_text();

@@ -21,7 +21,7 @@
 							<div class="testimonial-text">
 								<div class="client-name">
 									<h4><?php echo $row['name']; ?></h4>
-									<span><?php echo $row['designation'] ?>, <?php echo $row['company']; ?></span>
+									<span><?php echo $row['designation']; ?></span>
 								</div>
 								<div class="testimonial-detail">
 								<i class="fa fa-quote-left"></i>

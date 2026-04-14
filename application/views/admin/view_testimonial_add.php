@@ -49,12 +49,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Company <span>*</span></label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="company" value="<?php if(isset($_POST['company'])){echo $_POST['company'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Photo <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)

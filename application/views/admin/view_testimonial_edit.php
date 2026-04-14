@@ -47,12 +47,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Company <span>*</span></label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="company" value="<?php echo $testimonial['company']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Photo</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $testimonial['photo']; ?>" alt="Slider Photo" style="width:180px;">

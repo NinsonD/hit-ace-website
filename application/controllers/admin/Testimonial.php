@@ -35,13 +35,7 @@ class Testimonial extends CI_Controller
 
 			$this->form_validation->set_rules('name', 'Name', 'trim|required');
 			$this->form_validation->set_rules('designation', 'Designation', 'trim|required');
-			$this->form_validation->set_rules('company', 'Company', 'trim|required');
-			$this->form_validation->set_rules('comment', 'Comment', 'trim|required');
 
-			if($this->form_validation->run() == FALSE) {
-				$valid = 0;
-                $error .= validation_errors();
-            }
 
             $path = $_FILES['photo']['name'];
 		    $path_tmp = $_FILES['photo']['tmp_name'];
@@ -77,7 +71,6 @@ class Testimonial extends CI_Controller
 		        $form_data = array(
 					'name'        => $_POST['name'],
 					'designation' => $_POST['designation'],
-					'company'     => $_POST['company'],
 					'photo'       => $final_name,
 					'comment'     => $_POST['comment']
 	            );
@@ -87,7 +80,6 @@ class Testimonial extends CI_Controller
 
 		        unset($_POST['name']);
 		        unset($_POST['designation']);
-		        unset($_POST['company']);
 		        unset($_POST['comment']);
 		    } 
 		    else
@@ -132,7 +124,6 @@ class Testimonial extends CI_Controller
 
 			$this->form_validation->set_rules('name', 'Name', 'trim|required');
 			$this->form_validation->set_rules('designation', 'Designation', 'trim|required');
-			$this->form_validation->set_rules('company', 'Company', 'trim|required');
 			$this->form_validation->set_rules('comment', 'Comment', 'trim|required');
 
 			if($this->form_validation->run() == FALSE) {
@@ -166,7 +157,6 @@ class Testimonial extends CI_Controller
 		    		$form_data = array(
 						'name'        => $_POST['name'],
 						'designation' => $_POST['designation'],
-						'company'     => $_POST['company'],
 						'comment'     => $_POST['comment']
 		            );
 		            $this->Model_testimonial->update($id,$form_data);
@@ -177,14 +167,13 @@ class Testimonial extends CI_Controller
 					$final_name = 'testimonial-'.$id.'.'.$ext;
 		        	move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-		        	$form_data = array(
+			        $form_data = array(
 						'name'        => $_POST['name'],
 						'designation' => $_POST['designation'],
-						'company'     => $_POST['company'],
 						'photo'       => $final_name,
 						'comment'     => $_POST['comment']
-		            );
-		            $this->Model_testimonial->update($id,$form_data);
+			        );
+			        $this->Model_testimonial->update($id,$form_data);
 				}
 				
 				$data['success'] = 'Testimonial is updated successfully';

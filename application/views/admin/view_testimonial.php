@@ -25,7 +25,6 @@ if(!$this->session->userdata('id')) {
 								<th>Photo</th>
 								<th width="100">Name</th>
 								<th width="100">Designation</th>
-								<th width="100">Company</th>
 								<th>Comment</th>
 								<th width="80">Action</th>
 							</tr>
@@ -41,7 +40,6 @@ if(!$this->session->userdata('id')) {
 									<td style="width:130px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:120px;"></td>
 									<td><?php echo $row['name']; ?></td>
 									<td><?php echo $row['designation']; ?></td>
-									<td><?php echo $row['company']; ?></td>
 									<td><?php echo $row['comment']; ?></td>
 									<td>										
 										<a href="<?php echo base_url(); ?>admin/testimonial/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

@@ -99,7 +99,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="row">			
 			<?php
+			$count = 0;
 			foreach ($service as $row) {
+				if($count >= 3) break;
+				$count++;
 				?>
 				<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
 					<div class="services-item">
@@ -116,6 +119,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php
 			}
 			?>
+		</div>
+		<div class="row">
+			<div class="col-md-12" style="text-align: center; margin-top: 30px;">
+				<div class="services-link">
+					<a href="<?php echo base_url(); ?>service">View All Services <i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -147,7 +157,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="filtr-container">			
 
 				<?php
+				$port_count = 0;
 				foreach ($portfolio as $row) {
+					if($port_count >= 6) break;
+					$port_count++;
 					?>
 					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
 						<div class="recent-item">
@@ -176,6 +189,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				?>
 
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 30px;">
+					<div class="services-link">
+						<a href="<?php echo base_url(); ?>portfolio">View All Projects <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -270,18 +290,18 @@ foreach ($testimonial_photo as $row) {
 					foreach ($testimonial as $row) {
 						?>
 						<div class="testimonial-item">
-							<div class="testimonial-text">
+							<div class="testimonial-photo">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+							</div>
+							<div class="testimonial-content">
 								<div class="client-name">
 									<h4><?php echo $row['name']; ?></h4>
 									<span><?php echo $row['designation']; ?></span>
 								</div>
 								<div class="testimonial-detail">
-								<i class="fa fa-quote-left"></i>
+									<i class="fa fa-quote-left"></i>
 									<p><?php echo nl2br($row['comment']); ?></p>
 								</div>
-							</div>
-							<div class="testimonial-photo">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 							</div>
 						</div>
 						<?php

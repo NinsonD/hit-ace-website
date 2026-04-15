@@ -18,18 +18,18 @@
 					foreach ($testimonial as $row) {
 						?>
 						<div class="testimonial-item">
-							<div class="testimonial-text">
+							<div class="testimonial-photo">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+							</div>
+							<div class="testimonial-content">
 								<div class="client-name">
 									<h4><?php echo $row['name']; ?></h4>
 									<span><?php echo $row['designation']; ?></span>
 								</div>
 								<div class="testimonial-detail">
-								<i class="fa fa-quote-left"></i>
+									<i class="fa fa-quote-left"></i>
 									<p><?php echo nl2br($row['comment']); ?></p>
 								</div>
-							</div>
-							<div class="testimonial-photo">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 							</div>
 						</div>
 						<?php

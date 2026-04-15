@@ -49,43 +49,13 @@
 <div class="footer-main">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+			<div class="col-sm-6 col-md-6 col-lg-6 footer-col wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
 				<h3><?php echo ABOUT_US; ?></h3>
 					<p>
 						<?php echo nl2br($setting['footer_about']); ?>
 					</p>
 			</div>
-			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-				<h3><?php echo LATEST_NEWS; ?></h3>
-				<?php
-				$i=0;				
-				foreach ($latest_news as $row) {
-					$i++;
-					if($i>$setting['total_recent_post']) {break;}
-					?>
-					<div class="news-item">
-						<div class="news-title"><a href="<?php echo base_url(); ?>news/view/<?php echo $row['news_id']; ?>"><?php echo $row['news_title']; ?></a></div>
-					</div>
-					<?php
-				}
-				?>
-			</div>
-			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-				<h3><?php echo POPULAR_NEWS; ?></h3>
-				<?php
-				$i=0;				
-				foreach ($popular_news as $row) {
-					$i++;
-					if($i>$setting['total_popular_post']) {break;}
-					?>
-					<div class="news-item">
-						<div class="news-title"><a href="<?php echo base_url(); ?>news/view/<?php echo $row['news_id']; ?>"><?php echo $row['news_title']; ?></a></div>
-					</div>
-					<?php
-				}
-				?>
-			</div>
-			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+			<div class="col-sm-6 col-md-6 col-lg-6 footer-col wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
 				<h3><?php echo QUICK_LINKS; ?></h3>
 				<div class="news-item">
 					<div class="news-title"><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></div>
@@ -114,7 +84,7 @@
 </div>
 
 
-<div class="scroll-top" style="display: block;">
+<div class="scroll-top" style="display: block;">	
 	<i class="fa fa-angle-up"></i>
 </div>
 

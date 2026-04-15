@@ -977,6 +977,14 @@ Slider
 	display: flex;
 	flex-direction: column;
 	min-height: 400px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	border-radius: 4px;
+}
+
+.services-item:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
 }
 
 .services-photo {
@@ -1150,6 +1158,14 @@ Slider
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.3s ease;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.lightbox-item:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .lightbox-bg {
@@ -1941,9 +1957,14 @@ span.page-numbers.current {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 120px;
-	height: 120px;
+	width: 200px;
+	height: 200px;
 	margin-top: 30px;
+	transition: transform 0.3s ease;
+}
+
+.brand-item:hover {
+	transform: scale(1.05);
 }
 
 /*brand-carousel Button*/
@@ -2372,6 +2393,7 @@ span.page-numbers.current {
 	height: 230px;
 	position: relative;
 	clear: both;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bannder-table {

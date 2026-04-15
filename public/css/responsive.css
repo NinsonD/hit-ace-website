@@ -85,7 +85,21 @@
 	.blog-clear .clear-item:nth-of-type(2n+1) {
 		clear: both;
 	}
-
+	
+	/* Tablet brand carousel optimization */
+	.brand-item {
+		width: 160px;
+		height: 160px;
+		margin-top: 25px;
+	}
+	/* Tablet button spacing */
+	.services-link a {
+		padding: 12px 28px;
+	}
+	/* Tablet headline optimization */
+	.headline h2 {
+		font-size: 28px;
+	}
 
 }
 
@@ -168,7 +182,9 @@
 		margin-right: 15px;
 	}
 	.recent-menu ul li {
-		display: block;
+		display: inline-block;
+		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 	.cunter-item {
 		border-right: 0px;
@@ -189,6 +205,41 @@
 		height: 28px;
 		line-height: 26px;
 		font-size: 15px;
+	}
+	/* Mobile brand carousel optimization */
+	.brand-item {
+		width: 120px;
+		height: 120px;
+		margin-top: 20px;
+	}
+	/* Mobile banner optimization */
+	.banner-slider {
+		height: 150px;
+	}
+	.banner-text h1 {
+		font-size: 22px;
+	}
+	/* Mobile headline optimization */
+	.headline h2 {
+		font-size: 24px;
+	}
+	.headline p {
+		font-size: 14px;
+	}
+	/* Improved mobile button spacing */
+	.services-link a {
+		padding: 12px 25px;
+		font-size: 14px;
+	}
+	/* Better spacing for sections */
+	.ptb-60 {
+		padding: 40px 0 !important;
+	}
+	.pt-60 {
+		padding-top: 40px !important;
+	}
+	.pb-60 {
+		padding-bottom: 40px !important;
 	}
 	.footer-copyrignt,
 	.footer-menu {

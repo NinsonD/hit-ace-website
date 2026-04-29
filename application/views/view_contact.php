@@ -94,6 +94,15 @@
 			<div class="col-md-6">
 				<h4><?php echo FIND_US_ON_MAP; ?></h4>
 				<div class="map-area">
+					<div class="company-info-box" style="background-color: #f8f9fa; padding: 15px; margin-bottom: 15px; border-left: 4px solid #007bff; border-radius: 4px;">
+						<h5 style="margin-top: 0; color: #333;">HITACE OPERATION AND MAINTENANCE SERVICES FOR OIL AND GAS INDUSTRY FACILITIES LLC</h5>
+						<p style="margin: 8px 0; color: #555;">
+							<strong><i class="fa fa-map-marker"></i> Address:</strong> 15th Floor, Dar Al Salam Building, Liwa Street, Corniche, Abu Dhabi - U.A.E.
+						</p>
+						<p style="margin: 8px 0; color: #555;">
+							<strong><i class="fa fa-phone"></i> Tel.:</strong> +97126660049
+						</p>
+					</div>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.381185902399!2d55.96957487604924!3d25.392047977586074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5c770885add6f%3A0x6f590dfc93424acc!2sHIT%20ACE%20MULTI%20FAB%20INDUSTRIES!5e0!3m2!1sen!2sae!4v1775283062850!5m2!1sen!2sae" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
@@ -101,13 +110,13 @@
 	</div>
 </div>
 
-<!-- Branches Section -->
+<!-- Associates Section -->
 <div class="branches-area pt-60 pb-60">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title text-center">
-					<h2>Our Branches</h2>
+					<h2>Our Associates</h2>
 					<p>Find us at our convenient locations</p>
 				</div>
 			</div>

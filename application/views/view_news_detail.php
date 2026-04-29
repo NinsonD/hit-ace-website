@@ -31,7 +31,7 @@
 			<div class="col-md-8">
 				<div class="single-service-item">
 					<div class="single-service-photo">
-						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['photo']; ?>" class="img-responsive" alt="">
+						<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $news['photo']; ?>" class="img-responsive" alt="">
 					</div>
 					<div class="single-service-text">
 						<div class="single-blog-author mb_20">

@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Branches</h1>
+		<h1>View Associates</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="<?php echo base_url(); ?>admin/branch/add" class="btn btn-primary btn-sm">Add Branch</a>
+		<a href="<?php echo base_url(); ?>admin/branch/add" class="btn btn-primary btn-sm">Add Associate</a>
 	</div>
 </section>
 

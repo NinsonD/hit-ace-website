@@ -19,7 +19,7 @@
 						?>
 						<div class="testimonial-item">
 							<div class="testimonial-photo">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+							<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 							</div>
 							<div class="testimonial-content">
 								<div class="client-name">

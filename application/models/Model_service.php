@@ -5,13 +5,13 @@ class Model_service extends CI_Model
 {
     public function get_service_data()
     {
-        $query = $this->db->query("SELECT * from tbl_service ORDER BY id ASC");
+        $query = $this->db->query("SELECT * from tbl_service ORDER BY sort_order ASC, id ASC");
         return $query->result_array();
     }
 
     public function get_service_data_order_by_heading()
     {
-        $query = $this->db->query("SELECT * from tbl_service ORDER BY heading ASC");
+        $query = $this->db->query("SELECT * from tbl_service ORDER BY sort_order ASC, heading ASC");
         return $query->result_array();
     }
 

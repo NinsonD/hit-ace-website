@@ -19,6 +19,7 @@ class Home extends CI_Controller {
 		$header['language'] = $this->Model_common->get_language_data();
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
+		$header['certificates'] = $this->Model_common->get_certificate_data();
 		
 		$header['slider'] = $this->Model_home->get_slider_data();
 		$header['why_choose_us'] = $this->Model_home->get_why_choose_us_data();

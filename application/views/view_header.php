@@ -19,7 +19,9 @@
 
 	<?php
 	foreach ($language as $lang) {
-		define($lang['name'], $lang['value']);
+		if (!defined($lang['name'])) {
+			define($lang['name'], $lang['value']);
+		}
 	}
 
 	if($slug_arr[0] == '')

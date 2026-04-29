@@ -42,13 +42,13 @@
 					<?php if($portfolio_photo_total>=1): ?>
 					<ul class="carousel-indicators single-carousel owl-carousel">
 					
-						<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/<?php echo $portfolio['photo']; ?>" alt=""></li>
+						<li data-target="#quote-carousel" data-slide-to="0" class="active"><img loading="lazy" class="img-responsive" src="<?php echo base_url(); ?>public/uploads/<?php echo $portfolio['photo']; ?>" alt=""></li>
 
 						<?php
 						foreach ($portfolio_photo as $row) {
 							$j++;
 							?>
-							<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/portfolio_photos/<?php echo $row['photo']; ?>" alt=""></li>
+							<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img loading="lazy" class="img-responsive" src="<?php echo base_url(); ?>public/uploads/portfolio_photos/<?php echo $row['photo']; ?>" alt=""></li>
 							<?php
 						}
 						?>

@@ -104,16 +104,20 @@
 		navText: ["<i class='fa fa-caret-left'></i>", "<i class='fa fa-caret-right'></i>"],
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				margin: 10
 			},
 			640: {
-				items: 1
+				items: 1,
+				margin: 15
 			},
 			750: {
-				items: 1
+				items: 1,
+				margin: 20
 			},
 			1000: {
-				items: 1
+				items: 1,
+				margin: 30
 			}
 		}
 	});
@@ -144,7 +148,7 @@
 	
 	//Brand
 	$('.brand-carousel').owlCarousel({
-		loop: false,
+		loop: true,
 		autoplay: true,
 		autoplayHoverPause: true,
 		margin: 30,

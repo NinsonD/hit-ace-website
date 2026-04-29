@@ -12,7 +12,7 @@
 		
 		<?php if($page['about_photo']!=""): ?>
 		<div class="col-md-12">
-			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['about_photo']; ?>" alt=""><br>
+			<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $page['about_photo']; ?>" alt=""><br>
 		</div>
 		<?php endif; ?>
 
@@ -76,7 +76,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="certificate-item">
 					<div class="certificate-photo">
-						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $certificate['image']; ?>" alt="<?php echo $certificate['title']; ?>">
+						<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $certificate['image']; ?>" alt="<?php echo $certificate['title']; ?>">
 					</div>
 					<div class="certificate-text">
 						<h4><?php echo $certificate['title']; ?></h4>

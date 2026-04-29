@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							?>
 							<li>
 								<div class="choose-icon">
-									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="Why Choose Photo">
+								<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="Why Choose Photo">
 								</div>
 								<div class="choose-text">
 									<h3><?php echo $row['heading']; ?></h3>
@@ -203,6 +203,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php endif; ?>
 
 
+<div class="services-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="headline">
+				<div class="headline-shadow">
+					<h2>Certificates & Appreciation</h2>
+					<p>Showcasing our achievements and recognitions</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">			
+			<?php
+			$cert_count = 0;
+			foreach ($certificates as $row) {
+				if($cert_count >= 3) break;
+				$cert_count++;
+				?>
+				<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['image']; ?>)"></div>
+						<div class="services-text">
+							<h3><?php echo $row['title']; ?></h3>
+							<?php echo substr($row['description'], 0, 100); ?>...
+							<div class="services-link">
+								<a href="<?php echo base_url(); ?>about">Learn More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php
+			}
+			?>
+		</div>
+		<div class="row">
+			<div class="col-md-12" style="text-align: center; margin-top: 30px;">
+				<div class="services-link">
+					<a href="<?php echo base_url(); ?>about">View All Certificates <i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <?php if($setting['team_status'] == 'Show'): ?>
 <div class="team-area ptb-60">
 	<div class="container">
@@ -291,7 +335,7 @@ foreach ($testimonial_photo as $row) {
 						?>
 						<div class="testimonial-item">
 							<div class="testimonial-photo">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+							<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 							</div>
 							<div class="testimonial-content">
 								<div class="client-name">
@@ -326,7 +370,7 @@ foreach ($testimonial_photo as $row) {
 						$faq_main_photo = $row['main_photo'];
 					}
 					?>
-					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $faq_main_photo; ?>" alt="FAQ Main Photo" class="img-responsive">
+						<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $faq_main_photo; ?>" alt="FAQ Main Photo" class="img-responsive">
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6">

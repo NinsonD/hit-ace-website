@@ -15,7 +15,7 @@
 				
 
 				<div class="service-main-photo">
-					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $res['photo']; ?>" alt="service photo">
+					<img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $res['photo']; ?>" alt="service photo">
 				</div>
 				
 
@@ -31,7 +31,7 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo SERVICES; ?></h3>
+						<h3><?php echo defined('SERVICES') ? SERVICES : (defined('SERVICE') ? SERVICE : 'Services'); ?></h3>
 						<ul>
 							<?php
 							foreach ($service_by_heading as $row) {

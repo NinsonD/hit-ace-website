@@ -12,7 +12,7 @@ class Model_service extends CI_Model
     }
 	
     function show() {
-        $sql = "SELECT * FROM tbl_service";
+        $sql = "SELECT * FROM tbl_service ORDER BY sort_order ASC, id ASC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }

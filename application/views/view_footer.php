@@ -4,7 +4,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="footer-contact-item">
 					<ul>
-						<li><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_address_icon']; ?>" alt="Icon"></li>
+						<li><img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_address_icon']; ?>" alt="Icon"></li>
 						<li>
 							<h4><?php echo ADDRESS; ?></h4>
 							<p>
@@ -17,7 +17,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="footer-contact-item">
 					<ul>
-						<li><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_phone_icon']; ?>" alt="Icon"></li>
+						<li><img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_phone_icon']; ?>" alt="Icon"></li>
 						<li>
 							<h4><?php echo CALL_US; ?></h4>
 							<p>
@@ -30,7 +30,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="footer-contact-item">
 					<ul>
-						<li><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_working_hour_icon']; ?>" alt="Icon"></li>
+						<li><img loading="lazy" src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['footer_working_hour_icon']; ?>" alt="Icon"></li>
 						<li>
 							<h4><?php echo WORKING_HOURS; ?></h4>
 							<p>

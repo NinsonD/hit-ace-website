@@ -39,6 +39,7 @@ class Portfolio extends CI_Controller {
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
 		$header['portfolio_order_by_name'] = $this->Model_portfolio->get_portfolio_data_order_by_name();
+		$header['single_portfolio_data'] = $this->Model_common->get_single_portfolio_data($id);
 
 		$data['portfolio'] = $this->Model_portfolio->get_portfolio_detail($id);
 		$data['portfolio_photo'] = $this->Model_portfolio->get_portfolio_photo($id);

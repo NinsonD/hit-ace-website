@@ -55,11 +55,12 @@
 			echo '<meta name="keywords" content="'.$page['mk_service'].'">';
 			echo '<title>'.$page['mt_service'].'</title>';	
 		} else {
-			$single_service_data = $this->Model_common->get_single_service_data($slug_arr[2]);
-			foreach($single_service_data as $row) {
-				echo '<meta name="description" content="'.$row['meta_description'].'">';
-				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].'</title>';	
+			if(isset($single_service_data)) {
+				foreach($single_service_data as $row) {
+					echo '<meta name="description" content="'.$row['meta_description'].'">';
+					echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
+					echo '<title>'.$row['meta_title'].'</title>';	
+				}
 			}
 		}		
 	}
@@ -70,11 +71,12 @@
 			echo '<meta name="keywords" content="'.$page['mk_portfolio'].'">';
 			echo '<title>'.$page['mt_portfolio'].'</title>';	
 		} else {
-			$single_portfolio_data = $this->Model_common->get_single_portfolio_data($slug_arr[2]);
-			foreach($single_portfolio_data as $row) {
-				echo '<meta name="description" content="'.$row['meta_description'].'">';
-				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].'</title>';	
+			if(isset($single_portfolio_data)) {
+				foreach($single_portfolio_data as $row) {
+					echo '<meta name="description" content="'.$row['meta_description'].'">';
+					echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
+					echo '<title>'.$row['meta_title'].'</title>';	
+				}
 			}
 		}		
 	}
@@ -155,7 +157,6 @@
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/spacing.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/style.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/responsive.css'>
-	<link rel='stylesheet' href='<?php echo base_url(); ?>public/style.css'>
 
 
 	<style>

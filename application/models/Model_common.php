@@ -5,8 +5,15 @@ class Model_common extends CI_Model
 {
     public function get_setting_data()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'settings_data';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_settings WHERE id=1");
-        return $query->first_row('array');
+        $result = $query->first_row('array');
+        $this->cache->file->save($cache_key, $result, 3600); // 1 hour
+        return $result;
     }
     public function get_menu_data()
     {
@@ -15,33 +22,75 @@ class Model_common extends CI_Model
     }
     public function get_page_data()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'page_data';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_page WHERE id=1");
-        return $query->first_row('array');
+        $result = $query->first_row('array');
+        $this->cache->file->save($cache_key, $result, 3600); // 1 hour
+        return $result;
     }   
     public function get_comment_code()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'comment_code';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_comment WHERE id=1");
-        return $query->first_row('array');
+        $result = $query->first_row('array');
+        $this->cache->file->save($cache_key, $result, 3600); // 1 hour
+        return $result;
     }
     public function get_social_data()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'social_data';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_social");
-        return $query->result_array();
+        $result = $query->result_array();
+        $this->cache->file->save($cache_key, $result, 3600); // 1 hour
+        return $result;
     }
     public function get_language_data()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'language_data';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_language");
-        return $query->result_array();
+        $result = $query->result_array();
+        $this->cache->file->save($cache_key, $result, 3600); // 1 hour
+        return $result;
     }
     public function get_latest_news()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'latest_news';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_news ORDER BY news_id DESC");
-        return $query->result_array();
+        $result = $query->result_array();
+        $this->cache->file->save($cache_key, $result, 1800); // 30 mins
+        return $result;
     }
     public function get_popular_news()
     {
+        $this->load->driver('cache', array('adapter' => 'file'));
+        $cache_key = 'popular_news';
+        if ($cached = $this->cache->file->get($cache_key)) {
+            return $cached;
+        }
         $query = $this->db->query("SELECT * from tbl_news ORDER BY total_view DESC");
-        return $query->result_array();
+        $result = $query->result_array();
+        $this->cache->file->save($cache_key, $result, 1800); // 30 mins
+        return $result;
     }
 
     public function get_single_service_data($id)

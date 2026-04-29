@@ -38,6 +38,7 @@ class Service extends CI_Controller {
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
 		$header['service_by_heading'] = $this->Model_service->get_service_data_order_by_heading();
+		$header['single_service_data'] = $this->Model_common->get_single_service_data($id);
 
 		$data['res'] = $this->Model_service->get_service_detail($id);
 
